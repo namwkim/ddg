@@ -38,7 +38,8 @@
         transition:color 0.5s;
       }
       a:hover{
-          color:#F2711C;
+          /*color:#F2711C;*/
+          text-decoration: underline;
 
       }
       .usecase-video{
@@ -71,6 +72,12 @@
         <p style="text-align:justify">
           In recent years, there is a growing need for communicating complex data in an accessible graphical form. Existing visualization creation tools support automatic visual encoding, but lack flexibility for creating custom design; on the other hand, freeform illustration tools require manual visual encoding, making the design process time-consuming and error-prone. In this paper, we present <strong style="color:#F2711C!important"><em>Data-Driven Guides</em></strong> (DDG), a technique for designing expressive information graphics in a graphic design environment. Instead of being confined by predefined templates or marks, designers can generate guides from data and use the guides to draw, place and measure custom shapes. We provide guides to encode data using three fundamental visual encoding channels: <strong style="color:#F2711C!important"><em>length, area, and position</em></strong>. Users can combine more than one guide to construct complex visual structures and map these structures to data. When underlying data is changed, we use a deformation technique to transform custom shapes using the guides as the backbone of the shapes. Our evaluation shows that data-driven guides allow users to create expressive and more accurate custom data-driven graphics.
         </p>
+
+      </div>
+      <div class="ui basic segment">
+        <p style="text-align:center">
+          <strong>👏 <a href="https://medium.com/@namwookkim/data-driven-guide-designing-expressive-information-graphics-e068a0c552e9" target="_blank">Please read our <em>Medium</em> article for more details.</a> 👏</strong>
+        </p>
       </div>
 
       <div class="ui basic segment">
@@ -80,7 +87,7 @@
             <div class="column">
               <img style="margin:12px" class="ui left floated tiny rounded image" src="images/nam.png">
               <p style="margin-top:22px">
-                <strong><a href="http://www.namwkim.org" target="_blank">Nam Wook Kim</a></strong><br>
+                <a href="http://www.namwkim.org" target="_blank">Nam Wook Kim</a><br>
                 Ph.D. student<br>
                 Harvard
               </p>
@@ -88,7 +95,7 @@
             <div class="column">
               <img style="margin:12px" class="ui left floated tiny rounded image" src="images/eston.png">
               <p style="margin-top:22px">
-                <strong><a href="http://www.cs.cornell.edu/~ers/" target="_blank">Eston Schweickart</a></strong><br>
+                <a href="http://www.cs.cornell.edu/~ers/" target="_blank">Eston Schweickart</a><br>
                 Ph.D. student<br>
                 Cornell
               </p>
@@ -96,7 +103,7 @@
             <div class="column">
               <img style="margin:12px" class="ui left floated tiny rounded image" src="images/leo.png">
               <p style="margin-top:22px">
-                <strong><a href="https://research.adobe.com/person/zhicheng-liu/" target="_blank">Zhicheng Liu</a></strong><br>
+                <a href="https://research.adobe.com/person/zhicheng-liu/" target="_blank">Zhicheng Liu</a><br>
                 Research Scientist<br>
                 Adobe
               </p>
@@ -104,7 +111,7 @@
             <div class="column">
               <img style="margin:12px" class="ui left floated tiny rounded image" src="images/mira.png">
               <p style="margin-top:22px">
-                <strong><a href="https://research.adobe.com/person/mira-dontcheva/" target="_blank">Mira Dontcheva</a></strong><br>
+                <a href="https://research.adobe.com/person/mira-dontcheva/" target="_blank">Mira Dontcheva</a><br>
                 Senior Research Scientist<br>
                 Adobe
               <p>
@@ -114,7 +121,7 @@
             <div class="column">
               <img style="margin:12px" class="ui left floated tiny rounded image" src="images/wilmot.png">
               <p style="margin-top:22px">
-                <strong><a href="https://research.adobe.com/person/wilmot-li/" target="_blank">Wilmot Li</a></strong><br>
+                <a href="https://research.adobe.com/person/wilmot-li/" target="_blank">Wilmot Li</a><br>
                 Principal Scientist<br>
                 Adobe
               <p>
@@ -124,7 +131,7 @@
             <div class="column">
               <img style="margin:12px" class="ui left floated tiny rounded image" src="images/jovan.png">
               <p style="margin-top:22px">
-                <strong><a href="https://research.adobe.com/person/jovan-popovic/" target="_blank">Jovan Popovic</a></strong><br>
+                <a href="https://research.adobe.com/person/jovan-popovic/" target="_blank">Jovan Popovic</a><br>
                 Senior Principal Scientist<br>
                 Adobe
               </p>
@@ -132,7 +139,7 @@
             <div class="column">
               <img style="margin:12px" class="ui left floated tiny rounded image" src="images/hanspeter.png">
               <p style="margin-top:22px">
-                <strong><a href="https://www.seas.harvard.edu/directory/pfister" target="_blank">Hanspeter Pfister</a></strong><br>
+                <a href="https://www.seas.harvard.edu/directory/pfister" target="_blank">Hanspeter Pfister</a><br>
                 Professor<br>
                 Harvard
               </p>
@@ -166,7 +173,9 @@
 
         </p>
       </div>
-      <div class="ui basic segment">
+
+
+      <!-- <div class="ui basic segment">
         <h1 class="ui orange header">Drawing with Data-Driven Guides</h1>
         <p style="text-align:justify">
           We draw inspiration from existing design
@@ -232,15 +241,7 @@ using a single stroke to draw the area and to encode slopes in the declining tre
               <p style="text-align:center">A balloon chart using area
 DDG for the size of balloons and position DDG for the location of the balloons.</p>
             </div>
-            <!-- <div class="column">
-              <img class="example ui fluid image" src="images/example4.png">
-              <p style="text-align:center">A customized isotype chart using both length and area DDG to encode a pregnant woman’s
-height and belly respectively.</p>
-            </div> -->
-            <!-- <div class="column">
-              <img class="example ui fluid image" src="images/example5.png">
-              <p style="text-align:center">An isotype chart using data guides to measure the heights of imported building icons.</p>
-            </div> -->
+
             <div class="column">
               <img class="example ui fluid image" src="images/example6.png">
               <p style="text-align:center">A cloud and chimney chart where four DDG created from
@@ -291,23 +292,13 @@ do not match the size of data guides; the baseline is not clear however.
 </div>
 <p>
 We also found a similar case in the balloon chart designed by Tiffany Farrant-Gonzalez; that is, the radius of the balloon instead of the area was used to represent the data value. This case is actually a commonly found mistake in existing infographic design practice.
-<!--
-We also found that some existing infographics were potentially in-
-accurately designed.
 
-
-When recreating the factory worker chart, we found that
-the lengths of three lava marks representing France, Japan, and Britain
-do not match the size of data guides; the baseline is not clear however.
-
-With DDG, we found that the radius of balloons was used instead
-of the area. -->
         </p>
         <div class="ui container stackable four column grid centered">
           <div class="column"><img class="example ui fluid image" src="images/balloon-chart.png"></div>
           <div class="column"><img class="example ui fluid image" src="images/proofreading2.png"></div>
         </div>
-      </div>
+      </div> -->
       <div class="ui basic segment">
         <h1 class="ui orange header">Acknowledgement</h1>
         <h3 class="ui grey header">Nigel Holmes' infographics</h3>
